@@ -1,0 +1,28 @@
+{
+  "network": "local Anvil; not a Sepolia deployment",
+  "hardfork": "cancun",
+  "compiler": "0.8.26",
+  "optimizer_runs": 1,
+  "via_ir": true,
+  "metadata": "no CBOR trailer",
+  "forge": "forge Version: 1.8.3",
+  "runtime_bytes": 435,
+  "creation_bytes_without_arguments": 547,
+  "constructor_root": "0xd4453790033a2bd762f526409b7f358023773723d9e9bc42487e4996869162b6",
+  "members": [
+    "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+    "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+  ],
+  "claimant": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+  "proof": [
+    "0x00314e565e0574cb412563df634608d76f5c59d9f817e85966100ec1d48005c0",
+    "0x7e0eefeb2d8740528b8f598997a219669f0842302d3c573e9bb7262be3387e63"
+  ],
+  "proof_depth": 2,
+  "claim_transaction_gas": 46359,
+  "claim_intrinsic_gas": 22356,
+  "claim_execution_gas": 24003,
+  "claim_calldata": "0xb391c5080000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000200314e565e0574cb412563df634608d76f5c59d9f817e85966100ec1d48005c07e0eefeb2d8740528b8f598997a219669f0842302d3c573e9bb7262be3387e63"
+}

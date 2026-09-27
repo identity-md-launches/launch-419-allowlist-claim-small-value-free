@@ -1,0 +1,24 @@
+{
+  "kind": "evm_project",
+  "token": {
+    "contract": "LaunchToken",
+    "name": "Allowlist Claim",
+    "symbol": "ALLOW",
+    "decimals": 18
+  },
+  "contracts": [
+    {
+      "contract": "AllowlistClaim",
+      "constructorArgs": [
+        "0xd4453790033a2bd762f526409b7f358023773723d9e9bc42487e4996869162b6"
+      ]
+    }
+  ],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "notes": "Intended network: Sepolia (11155111), selected by the deployment system. LaunchToken in src/LaunchToken.sol takes no constructor arguments. AllowlistClaim in src/AllowlistClaim.sol takes one immutable bytes32 root and has no token dependency, owner, setters, upgrade path, payable entry points, or external calls. Leaves are keccak256 of packed 20-byte addresses; proof pairs are sorted before hashing. Claims only record membership and confer no token entitlement. The constructor root is the four-account public Anvil demo tree documented with members and a proof in reports/gas-and-size.json and covered by the fixed-vector test. This configures a demonstration allowlist, not a publisher-supplied live allowlist. No Sepolia deployment receipt is present in the accepted tree. No initialization calls are required. The pool pairs with native ETH and has no hook; initialPrice is decimal sqrtPriceX96 equal to 2^96. The README reports 435 runtime bytes and 46,359 gas for a local successful claim with a two-sibling proof."
+}
